@@ -34,7 +34,7 @@ test('4. Remove Item from Cart', async ({ page }) => {
   await page.click('#add-to-cart-sauce-labs-backpack');
   await page.click('#remove-sauce-labs-backpack');
   const cartBadge = page.locator('.shopping_cart_badge');
-  await expect.soft(cartBadge).toHaveCount(1);
+  await expect.soft(cartBadge).toHaveCount(0);
 });
 
 test('5. Complete Checkout Process', async ({ page }) => {
